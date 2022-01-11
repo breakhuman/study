@@ -14,9 +14,7 @@ bot.sendMessage(chat_id = chat_id, text='저는 봇입니다.')
 updater = Updater(token='5057996655:AAHKt-XRkTlB6LLsX6Fa2Wx-k18HrrgcCSc', use_context=True)
 dispatcher = updater.dispatcher
 updater.start_polling()
- 
-# 사용자가 보낸 메세지를 읽어들이고, 답장을 보내줍니다.
-# 아래 함수만 입맛에 맞게 수정해주면 됩니다. 다른 것은 건들 필요없어요.
+
 def handler(update, context):
     user_text = update.message.text # 사용자가 보낸 메세지를 user_text 변수에 저장합니다.
     if user_text == "안녕": # 사용자가 보낸 메세지가 "안녕"이면?
