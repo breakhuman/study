@@ -24,7 +24,7 @@ def checkWin(user, com):
 print('\n-------------------------------------')
 while True:
     user = input("가위, 바위, 보 : ")
-    com = sel[random.randint(0, 2)]
+    com = random.choice(sel)
     if checkWin(user, com):
         break
 print('-------------------------------\n')
